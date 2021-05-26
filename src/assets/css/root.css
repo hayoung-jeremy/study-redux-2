@@ -1,0 +1,14 @@
+:root {
+  /* main */
+  --main-color: #ffc8c8;
+  /* text */
+  --txt-default: #333;
+  --txt-btn: #999;
+  --txt-btn-hover: #666;
+  /* btn */
+  --btn-color-bg: #f7f7f7;
+  --btn-color-bg-hover: #eee;
+  /* transitions */
+  --trns-03: 0.3s;
+  --trns-05: 0.5s;
+}

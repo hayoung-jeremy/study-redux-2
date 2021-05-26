@@ -15,25 +15,28 @@ const RenderDataD1 = ({
       <div>
         <form onSubmit={onSubmitTitleD1}>
           <input
+            className="btn"
             type="text"
             placeholder="메뉴를 입력하세요"
             onChange={onChangeTitleD1}
             value={titleD1}
           />
-          <button>변경</button>
+          <button className="btn">변경</button>
         </form>
       </div>
       <div>
         <form onSubmit={onSubmitPathD1}>
           <input
+            className="btn"
             type="text"
             placeholder="메뉴 경로를 입력하세요"
             onChange={onChangePathD1}
             value={pathD1}
           ></input>
-          <button>변경</button>
+          <button className="btn">변경</button>
         </form>
       </div>
+      <button className="btn">자세히보기</button>
     </section>
   );
 };
