@@ -1,43 +1,11 @@
-// components 폴더에는 오직 view만 담당하는 component 들을 구성한다.
 import React from "react";
+import DataD1List from "./DataD1List";
 
-const RenderDataD1 = ({
-  titleD1,
-  onSubmitTitleD1,
-  onChangeTitleD1,
-  pathD1,
-  onSubmitPathD1,
-  onChangePathD1,
-}) => {
+const RenderDataD1 = () => {
   return (
-    <section>
-      <h2 className="blind">rendering depth 01 data here</h2>
-      <div>
-        <form onSubmit={onSubmitTitleD1}>
-          <input
-            className="btn"
-            type="text"
-            placeholder="메뉴를 입력하세요"
-            onChange={onChangeTitleD1}
-            value={titleD1}
-          />
-          <button className="btn">변경</button>
-        </form>
-      </div>
-      <div>
-        <form onSubmit={onSubmitPathD1}>
-          <input
-            className="btn"
-            type="text"
-            placeholder="메뉴 경로를 입력하세요"
-            onChange={onChangePathD1}
-            value={pathD1}
-          ></input>
-          <button className="btn">변경</button>
-        </form>
-      </div>
-      <button className="btn">자세히보기</button>
-    </section>
+    <>
+      <DataD1List />
+    </>
   );
 };
 
