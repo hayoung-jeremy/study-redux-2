@@ -11,33 +11,19 @@ const DataD1List = () => {
     const depth_01__title = item.app_name;
     const depth_01__url = item.app_url;
     return (
-      <div>
-        <ul>
-          <li key={uuidv4()}>
-            <form>
-              <input
-                className="btn"
-                type="text"
-                placeholder="메뉴를 입력하세요"
-                value={depth_01__title}
-              />
-              <button className="btn">변경</button>
-            </form>
-            <form>
-              <input
-                className="btn"
-                type="text"
-                placeholder="메뉴 경로를 입력하세요"
-                value={depth_01__url}
-              ></input>
-              <button className="btn">변경</button>
-            </form>
-          </li>
-        </ul>
-      </div>
+      <li key={uuidv4()} className="btn">
+        {depth_01__title}
+        {depth_01__url}
+      </li>
     );
   });
-  return <>{menu_tree}</>;
+  return (
+    <>
+      <div>
+        <ul className="container">{menu_tree}</ul>
+      </div>
+    </>
+  );
 };
 
 export default DataD1List;

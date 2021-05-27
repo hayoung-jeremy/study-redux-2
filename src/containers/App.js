@@ -1,11 +1,11 @@
 import React from "react";
-import ViewDataD1 from "../components/ViewDataD1";
 import "../assets/css/style.css";
+import ViewDataPersonal from "../components/ViewDataPersonal";
 
 const App = () => {
   return (
     <>
-      <ViewDataD1></ViewDataD1>
+      <ViewDataPersonal />
     </>
   );
 };
