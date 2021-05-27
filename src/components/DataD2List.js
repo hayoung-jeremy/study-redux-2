@@ -6,13 +6,21 @@ const DataD2List = () => {
   // 광주은행 메뉴트리
   const [KJ_SB] = data_personal;
   // depth 02
-  const menu_tree = KJ_SB.menus.map((item) =>
-    item.menus.map((item) => <li key={uuidv4()}>{item.app_name}</li>)
+  const depth_02 = KJ_SB.menus.map((item) =>
+    item.menus.map((item) => {
+      const depth_02__title = item.app_name;
+      const depth_02__path = item.app_url;
+      return (
+        <li key={uuidv4()} className="btn">
+          {depth_02__title} {depth_02__path}
+        </li>
+      );
+    })
   );
 
   return (
     <div>
-      <ul>{menu_tree}</ul>
+      <ul>{depth_02}</ul>
     </div>
   );
 };

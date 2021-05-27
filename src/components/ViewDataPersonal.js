@@ -6,7 +6,7 @@ import DataD2List from "./DataD2List";
 const ViewDataPersonal = () => {
   return (
     <section>
-      <h2 className="blind">rendering depth 01 data here</h2>
+      <h2 className="blind">rendering personal banking data here</h2>
       <DataD1List />
       <DataD2List />
     </section>

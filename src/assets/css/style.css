@@ -183,7 +183,7 @@ input.btn::placeholder {
   transition: var(--trns-03);
   cursor: pointer;
 }
-.btn ~ .btn {
+.flex-container .btn ~ .btn {
   margin-left: 8px;
 }
 .btn:hover {
