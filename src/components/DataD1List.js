@@ -6,7 +6,7 @@ const DataD1List = () => {
   // 광주은행 메뉴트리
   const [KJ_SB] = data_personal;
   console.log(KJ_SB.menus);
-
+  // depth 01
   const menu_tree = KJ_SB.menus.map((item) => {
     const depth_01__title = item.app_name;
     const depth_01__url = item.app_url;
@@ -19,8 +19,8 @@ const DataD1List = () => {
   });
   return (
     <>
-      <div>
-        <ul className="container">{menu_tree}</ul>
+      <div className="default-container middle">
+        <ul className="flex-container">{menu_tree}</ul>
       </div>
     </>
   );
