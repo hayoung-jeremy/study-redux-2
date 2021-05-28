@@ -9,6 +9,7 @@
   --btn-color-bg: #f7f7f7;
   --btn-color-bg-hover: #eee;
   /* transitions */
+  --trns-02: 0.2s;
   --trns-03: 0.3s;
   --trns-05: 0.5s;
 }

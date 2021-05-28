@@ -180,7 +180,7 @@ input.btn::placeholder {
   color: var(--txt-btn);
   background-color: var(--btn-color-bg);
   font-size: 14px;
-  transition: var(--trns-03);
+  transition: var(--trns-02);
   cursor: pointer;
 }
 .flex-container .btn ~ .btn {
