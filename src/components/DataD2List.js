@@ -11,7 +11,9 @@ const DataD2List = () => {
 
   console.log(depth_01__arr[0].menus);
 
-  return <div className="default-container middle"></div>;
+  return (
+    <div className="default-container middle">{depth_01__arr[0].menus}</div>
+  );
 };
 
 export default DataD2List;
