@@ -186,15 +186,14 @@ input.btn::placeholder {
   background-color: var(--main-color-dimmed);
 }
 .btn-clicked a {
-  color: #ff9393;
+  color: var(--txt-btn-clicked);
 }
 .flex-container .btn ~ .btn {
   margin-left: 8px;
 }
 .btn:hover {
-  color: var(--txt-btn-hover);
-  background-color: var(--btn-color-bg-hover);
+  filter: brightness(95%);
 }
-.btn:hover a {
-  color: var(--txt-btn-hover);
+.btn.btn-clicked:hover {
+  filter: brightness(100%);
 }
