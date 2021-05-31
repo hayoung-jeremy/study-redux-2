@@ -5,13 +5,11 @@
   /* text */
   --txt-default: #333;
   --txt-white: #fff;
-  --txt-btn: #999;
-  --txt-btn-hover: #666;
-  --txt-btn-clicked: #ff9393;
   /* btn */
-  --btn-color-bg: #f7f7f7;
-  --btn-color-bg-hover: #eee;
-  --btn-color-clicked: #ffc8c8;
+  --btn-bg: #f7f7f7;
+  --btn-bg-hover: #eee;
+  --btn-txt: #999;
+  --btn-txt-clicked: #ff9393;
   /* transitions */
   --trns-02: 0.2s;
   --trns-03: 0.3s;
