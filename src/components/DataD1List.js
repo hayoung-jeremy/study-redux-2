@@ -6,10 +6,14 @@ const DataD1List = ({ KJ_SB }) => {
   const [clickedItem, setClickedItem] = useState(0);
 
   const ListItems = ({ index, value }) => {
+    const onClickItem = () => {
+      console.log(index);
+      setClickedItem(index);
+    };
     return (
       <li
         className={`btn ${clickedItem === index ? "btn-clicked" : ""}`}
-        onClick={() => setClickedItem(index)}
+        onClick={onClickItem}
       >
         <Link>{value}</Link>
       </li>

@@ -149,7 +149,7 @@ aside {
 /* ---------- common ---------- */
 /* container */
 .default-container {
-  padding: 20px 12px;
+  padding: 12px;
   border-bottom: 1px solid #eee;
 }
 .default-container.middle {
