@@ -1,17 +1,12 @@
 import React from "react";
-import data_personal from "../db/data_personal.json";
 import { v4 as uuidv4 } from "uuid";
 import { Link } from "react-router-dom";
 
-const DataD2List = () => {
+const DataD2List = ({ KJ_SB }) => {
   //
   let d2_index = 0;
 
-  // 광주은행 메뉴트리
-  const [KJ_SB] = data_personal; // [ {} ]
-
-  const depth_01__arr = KJ_SB.menus;
-  // console.log(depth_01__arr); // [ {}, {}, {} ... ]
+  const depth_01__arr = KJ_SB.menus; // [ {}, {}, {} ... ]
 
   const depth_02__arr = depth_01__arr.map((item) => {
     return item.menus;
