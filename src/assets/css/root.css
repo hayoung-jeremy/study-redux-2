@@ -1,13 +1,16 @@
 :root {
   /* main */
   --main-color: #ffc8c8;
+  --main-color-dimmed: #ffe8e8;
   /* text */
   --txt-default: #333;
+  --txt-white: #fff;
   --txt-btn: #999;
   --txt-btn-hover: #666;
   /* btn */
   --btn-color-bg: #f7f7f7;
   --btn-color-bg-hover: #eee;
+  --btn-color-clicked: #ffc8c8;
   /* transitions */
   --trns-02: 0.2s;
   --trns-03: 0.3s;

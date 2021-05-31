@@ -7,20 +7,23 @@ const DataD1List = () => {
   // 광주은행 메뉴트리
   const [KJ_SB] = data_personal;
 
+  const ListItems = ({ value }) => (
+    <li className="btn">
+      <Link>{value}</Link>
+    </li>
+  );
+
+  const TitleList = () => {
+    const depth_01_title = KJ_SB.menus.map((item, index) => {
+      return <ListItems key={uuidv4()} value={item.app_name} />;
+    });
+    return <ul className="flex-container">{depth_01_title}</ul>;
+  };
+
   return (
     <>
       <div className="default-container middle">
-        <ul className="flex-container">
-          {KJ_SB.menus.map((item) => {
-            const depth_01__title = item.app_name;
-            // depth_01
-            return (
-              <li key={uuidv4()} className="btn">
-                <Link to="/depth_02">{depth_01__title}</Link>
-              </li>
-            );
-          })}
-        </ul>
+        <TitleList />
       </div>
     </>
   );

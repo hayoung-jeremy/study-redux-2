@@ -150,6 +150,7 @@ aside {
 /* container */
 .default-container {
   padding: 20px 12px;
+  border-bottom: 1px solid #eee;
 }
 .default-container.middle {
   width: 90%;
@@ -180,6 +181,12 @@ input.btn::placeholder {
 .btn a {
   color: var(--txt-btn);
   transition: var(--trns-02);
+}
+.btn-clicked {
+  background-color: var(--main-color-dimmed);
+}
+.btn-clicked a {
+  color: #ff9393;
 }
 .flex-container .btn ~ .btn {
   margin-left: 8px;
