@@ -1,8 +1,10 @@
 import React from "react";
 import data_personal from "../db/data_personal.json";
 import { v4 as uuidv4 } from "uuid";
+import { Link } from "react-router-dom";
 
 const DataD2List = () => {
+  //
   let d2_index = 0;
 
   // 광주은행 메뉴트리
@@ -17,7 +19,11 @@ const DataD2List = () => {
 
   const depth_02__title = depth_02__arr.map((item) => {
     const dp_2_title = item.map((item) => {
-      return <li key={uuidv4()}>{item.app_name}</li>;
+      return (
+        <li className="btn" key={uuidv4()}>
+          <Link>{item.app_name}</Link>
+        </li>
+      );
     });
     return dp_2_title;
   });
@@ -25,7 +31,7 @@ const DataD2List = () => {
 
   return (
     <div className="default-container middle">
-      <ul>{depth_02__title[d2_index]}</ul>
+      <ul className="flex-container">{depth_02__title[d2_index]}</ul>
     </div>
   );
 };

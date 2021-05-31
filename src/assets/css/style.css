@@ -84,13 +84,8 @@ button {
 }
 
 a {
-  color: #222;
+  color: #333;
   text-decoration: none;
-}
-
-a:hover {
-  color: #000;
-  text-decoration: underline;
 }
 
 button * {
@@ -177,11 +172,14 @@ input.btn::placeholder {
   padding: 8px 12px;
   border-radius: 4px;
   text-align: center;
-  color: var(--txt-btn);
   background-color: var(--btn-color-bg);
   font-size: 14px;
   transition: var(--trns-02);
   cursor: pointer;
+}
+.btn a {
+  color: var(--txt-btn);
+  transition: var(--trns-02);
 }
 .flex-container .btn ~ .btn {
   margin-left: 8px;
@@ -189,4 +187,7 @@ input.btn::placeholder {
 .btn:hover {
   color: var(--txt-btn-hover);
   background-color: var(--btn-color-bg-hover);
+}
+.btn:hover a {
+  color: var(--txt-btn-hover);
 }

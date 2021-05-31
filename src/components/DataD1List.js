@@ -1,6 +1,7 @@
 import React from "react";
 import data_personal from "../db/data_personal.json";
 import { v4 as uuidv4 } from "uuid";
+import { Link } from "react-router-dom";
 
 const DataD1List = () => {
   // 광주은행 메뉴트리
@@ -15,7 +16,7 @@ const DataD1List = () => {
             // depth_01
             return (
               <li key={uuidv4()} className="btn">
-                {depth_01__title}
+                <Link to="/depth_02">{depth_01__title}</Link>
               </li>
             );
           })}
