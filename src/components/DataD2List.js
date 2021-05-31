@@ -1,32 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { Link } from "react-router-dom";
 
-const DataD2List = ({ KJ_SB }) => {
-  //
-  let d2_index = 0;
+const DataD2List = ({ KJ_SB, currentItem, setCurrentItem }) => {
+  const [clickedItem, setClickedItem] = useState(0);
+  const [clickedItemSelf, setClickedItemSelf] = useState(0);
 
-  const depth_01__arr = KJ_SB.menus; // [ {}, {}, {} ... ]
-
-  const depth_02__arr = depth_01__arr.map((item) => {
-    return item.menus;
-  });
-
-  const depth_02__title = depth_02__arr.map((item) => {
-    const dp_2_title = item.map((item) => {
-      return (
-        <li className="btn" key={uuidv4()}>
-          <Link>{item.app_name}</Link>
-        </li>
-      );
+  const ListItems = ({ index, value }) => {
+    const onClickItem = () => {
+      setClickedItemSelf(index);
+    };
+    return (
+      <li
+        className={`btn ${clickedItemSelf === index ? "btn-clicked" : ""}`}
+        onClick={onClickItem}
+      >
+        <Link>{value}</Link>
+      </li>
+    );
+  };
+  const TitleList = () => {
+    const depth_02__arr = KJ_SB.menus.map((item) => {
+      return item.menus;
     });
-    return dp_2_title;
-  });
-  console.log(depth_02__title);
+    const depth_02__title = depth_02__arr.map((item) => {
+      const titleNames = item.map((item, index) => {
+        return <ListItems key={uuidv4()} value={item.app_name} index={index} />;
+      });
+      return titleNames;
+    });
+    return (
+      <ul className="flex-container">
+        {depth_02__title.filter((data, index) => {
+          return index === currentItem;
+        })}
+      </ul>
+    );
+  };
 
   return (
     <div className="default-container middle">
-      <ul className="flex-container">{depth_02__title[d2_index]}</ul>
+      <TitleList />
     </div>
   );
 };

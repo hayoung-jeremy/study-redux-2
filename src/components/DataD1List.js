@@ -2,17 +2,19 @@ import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { Link } from "react-router-dom";
 
-const DataD1List = ({ KJ_SB }) => {
-  const [clickedItem, setClickedItem] = useState(0);
+const DataD1List = ({ KJ_SB, currentItem, setCurrentItem }) => {
+  console.log(currentItem, setCurrentItem);
+  const [clickedItemSelf, setclickedItemSelf] = useState(0);
 
   const ListItems = ({ index, value }) => {
     const onClickItem = () => {
       console.log(index);
-      setClickedItem(index);
+      setclickedItemSelf(index);
+      setCurrentItem(index);
     };
     return (
       <li
-        className={`btn ${clickedItem === index ? "btn-clicked" : ""}`}
+        className={`btn ${clickedItemSelf === index ? "btn-clicked" : ""}`}
         onClick={onClickItem}
       >
         <Link>{value}</Link>
