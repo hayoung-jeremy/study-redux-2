@@ -3,14 +3,7 @@ import data_personal from "../db/data_personal.json";
 import DataD1List from "./DataD1List";
 
 const ViewDataPersonal = () => {
-  const [KJ_SB] = data_personal;
-
-  return (
-    <section>
-      <h2 className="blind">rendering personal banking data here</h2>
-      <DataD1List KJ_SB={KJ_SB} />
-    </section>
-  );
+  return <DataD1List />;
 };
 
 export default ViewDataPersonal;
