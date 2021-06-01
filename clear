@@ -1,0 +1,125 @@
+[33mcommit 7ce7b7db22bd9595b1ba6de992f638c220ebc445[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Tue Jun 1 23:16:59 2021 +0900
+
+    functional specification
+
+[33mcommit 3d0f26eaa70fd094bad345efe3419bc9e4a64709[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Tue Jun 1 07:54:20 2021 +0900
+
+    rendering depth_02_title
+
+[33mcommit 5e01f8d57415ae761481e7bddd2a07a260983522[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Mon May 31 23:52:38 2021 +0900
+
+    seperating click function
+
+[33mcommit 3641a11f04a77ffc59927072e22fce18c6664c87[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Mon May 31 22:01:03 2021 +0900
+
+    KJ_SB as a prop from parent to childrens
+
+[33mcommit ba6fbfbe201f13b76224df8c6f154ccd9bfcbdfc[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Mon May 31 16:55:55 2021 +0900
+
+    renaming btn component styles
+
+[33mcommit 7e6cf0dc3c6f18a8dc8fcdb91dcc02996771aa0f[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Mon May 31 16:48:42 2021 +0900
+
+    onClick button and hover effect
+
+[33mcommit 84fff840c3d9b1a37015f382e21f9e8cbabada55[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Mon May 31 15:21:42 2021 +0900
+
+    restructuring depth_01
+
+[33mcommit 966794aa28a2ea2a9663a874ab1ae623bf2f0313[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Mon May 31 13:31:19 2021 +0900
+
+    installing react-router-dom
+
+[33mcommit 66bf9d88332f025ad47539ab02384629766ef1f5[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Mon May 31 07:43:48 2021 +0900
+
+    children of 메인
+
+[33mcommit 574a1586d2f53bd87f993f63e472becd9492dd4c[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Sun May 30 23:27:23 2021 +0900
+
+    testing
+
+[33mcommit 30c93553957c3e292fbd5bf34c84d1146f07158a[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Sat May 29 16:28:50 2021 +0900
+
+    clearing...
+
+[33mcommit a65f55d0f7a5884b0a6404b4bf6f4ca282b1fb02[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Fri May 28 22:19:53 2021 +0900
+
+    cannot filter data
+
+[33mcommit 424f923e7f0e300cc9fa05435b190b33dffc251d[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Thu May 27 23:49:30 2021 +0900
+
+    restructuring data
+
+[33mcommit 6e9a2c51d1ef1b947bf9db494c6940564ed543aa[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Thu May 27 13:17:23 2021 +0900
+
+    rendering depth 02
+
+[33mcommit 6eff3a30a9e0a4e447a2db2556e9a7d42c986a85[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Thu May 27 12:40:09 2021 +0900
+
+    fixing depth1 info
+
+[33mcommit ebd4b23c538dca127a6ec93b71d4e4da3c70fd19[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Wed May 26 16:55:22 2021 +0900
+
+    db / rendering depth_01 title
+
+[33mcommit 35b61690b507107d2cdb037e26793b8df1fbf856[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Wed May 26 16:01:24 2021 +0900
+
+    styling--01
+
+[33mcommit 2234a58cd1429a7d9c8b3bf2c6f23580327ca234[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Wed May 26 07:54:42 2021 +0900
+
+    rendering depth-01-data component
+
+[33mcommit a6d50f2e723cf690565a2cc9d1f6ea6a2a9b187a[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Wed May 26 07:32:32 2021 +0900
+
+    structuring
+
+[33mcommit eb23433dcaa547a5b2d6c76f3f31a16102d40472[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Wed May 26 07:22:38 2021 +0900
+
+    initial commit
+
+[33mcommit a6f9b88510154fc2015a447cba1b167dff72ddb4[m
+Author: Ha young, Kim <jeremiah91@naver.com>
+Date:   Wed May 26 07:18:29 2021 +0900
+
+    Initialize project using Create React App
