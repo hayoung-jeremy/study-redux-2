@@ -11,7 +11,7 @@ const DataD1List = ({ kj_sb }) => {
     setCheckedId(e.target.id);
   };
 
-  const Depth01Info = ({ id, value, index }) => {
+  const Depth01Info = ({ id, value }) => {
     return (
       <div>
         <a

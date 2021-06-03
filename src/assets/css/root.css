@@ -1,4 +1,12 @@
 :root {
+  /* ----- width ----- */
+  /* ----- height ----- */
+  /* ----- margin ----- */
+
+  /* ----- padding ----- */
+  --pd-default: 8px 12px;
+
+  /* ----- color ----- */
   /* main */
   --main-color: #ffc8c8;
   --main-color-dimmed: #ffe8e8;
@@ -10,7 +18,8 @@
   --btn-bg-hover: #eee;
   --btn-txt: #999;
   --btn-txt-clicked: #ff9393;
-  /* transitions */
+
+  /* ----- transition ----- */
   --trns-02: 0.2s;
   --trns-03: 0.3s;
   --trns-05: 0.5s;

@@ -147,6 +147,14 @@ aside {
 }
 
 /* ---------- common ---------- */
+/* header */
+header {
+  padding: var(--pd-default);
+}
+header .hayoung {
+  font-size: 16px;
+}
+
 /* container */
 .default-container {
   padding: 12px;
@@ -180,7 +188,7 @@ a.btn {
   border-radius: 4px;
   background-color: var(--btn-bg);
   transition: var(--trns-02);
-  padding: 8px 12px;
+  padding: var(--pd-default);
   text-align: center;
   font-size: 14px;
   cursor: pointer;
