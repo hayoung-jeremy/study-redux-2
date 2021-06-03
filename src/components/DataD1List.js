@@ -13,7 +13,7 @@ const DataD1List = ({ kj_sb }) => {
 
   const Depth01Info = ({ id, value }) => {
     return (
-      <div>
+      <li>
         <a
           href="#void"
           className={`btn ${checkedId === id ? "btn-clicked" : ""}`}
@@ -22,7 +22,7 @@ const DataD1List = ({ kj_sb }) => {
         >
           {value}
         </a>
-      </div>
+      </li>
     );
   };
 
@@ -34,7 +34,7 @@ const DataD1List = ({ kj_sb }) => {
 
     return (
       <div className="default-container">
-        <div className="flex-container">{depth_01__data}</div>
+        <ul className="flex-container">{depth_01__data}</ul>
       </div>
     );
   };
@@ -43,7 +43,7 @@ const DataD1List = ({ kj_sb }) => {
     <>
       <p>depth_01 app_name here</p>
       <ShowD1Data />
-      <DataD2List checkedId={checkedId} />
+      <DataD2List kj_sb={kj_sb} checkedId={checkedId} />
     </>
   );
 };
