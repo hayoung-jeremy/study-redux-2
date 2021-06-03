@@ -3,7 +3,7 @@
 /* Reset */
 html {
   overflow-y: scroll;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 body,
@@ -162,10 +162,19 @@ aside {
   justify-content: flex-start;
   align-items: center;
 }
+.flex-container div {
+  margin-left: 8px;
+}
+.flex-container div:first-child {
+  margin-left: 0;
+}
 
 /* btn components */
 input.btn::placeholder {
   color: #aaa;
+}
+a.btn {
+  display: block;
 }
 .btn {
   border-radius: 4px;
@@ -183,9 +192,6 @@ input.btn::placeholder {
   color: var(--btn-txt-clicked);
 }
 
-.flex-container .btn ~ .btn {
-  margin-left: 8px;
-}
 .btn:hover {
   filter: brightness(96%);
 }

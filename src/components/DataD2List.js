@@ -1,6 +1,7 @@
 import React from "react";
 
-const DataD2List = () => {
+const DataD2List = ({ checkedId }) => {
+  console.log(checkedId);
   // depth_02__id
   // depth_02__pid
   // depth_02__app_name
