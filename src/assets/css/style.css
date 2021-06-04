@@ -41,7 +41,7 @@ button {
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--bg-dark);
   *word-break: break-all;
   -ms-word-break: break-all;
 }
@@ -149,16 +149,19 @@ aside {
 /* ---------- common ---------- */
 /* header */
 header {
-  padding: var(--pd-default);
+  padding: var(--pd-header);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--bg-dark);
 }
 header .hayoung {
   font-size: 16px;
+  color: var(--txt-9);
 }
 
 /* container */
 .default-container {
   padding: 12px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #444;
 }
 .default-container.middle {
   width: 90%;
@@ -178,9 +181,7 @@ header .hayoung {
 }
 
 /* btn components */
-input.btn::placeholder {
-  color: #aaa;
-}
+
 a.btn {
   display: block;
 }
@@ -192,16 +193,18 @@ a.btn {
   text-align: center;
   font-size: 14px;
   cursor: pointer;
-  color: var(--btn-txt);
+  color: var(--txt-9);
+  box-sizing: border-box;
+  border: 1px solid transparent;
 }
 
 .btn.btn-clicked {
-  background-color: var(--main-color-dimmed);
-  color: var(--btn-txt-clicked);
+  border-color: var(--main-color-dimmed);
+  color: var(--main-color-dimmed);
 }
 
 .btn:hover {
-  filter: brightness(96%);
+  filter: brightness(90%);
 }
 .btn.btn-clicked:hover {
   filter: brightness(100%);

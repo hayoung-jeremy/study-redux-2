@@ -5,6 +5,7 @@
 
   /* ----- padding ----- */
   --pd-default: 8px 12px;
+  --pd-header: 12px;
 
   /* ----- color ----- */
   /* main */
@@ -13,11 +14,15 @@
   /* text */
   --txt-default: #333;
   --txt-white: #fff;
+  --txt-e: #eee;
+  --txt-9: #999999;
+
   /* btn */
-  --btn-bg: #f7f7f7;
-  --btn-bg-hover: #eee;
-  --btn-txt: #999;
+  --btn-bg: #333;
   --btn-txt-clicked: #ff9393;
+  /* bg */
+  --bg-light: #f8f8f8;
+  --bg-dark: #222;
 
   /* ----- transition ----- */
   --trns-02: 0.2s;

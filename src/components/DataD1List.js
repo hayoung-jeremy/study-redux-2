@@ -4,22 +4,17 @@ import { v4 as uuidv4 } from "uuid";
 
 const DataD1List = ({ kj_sb }) => {
   // check selected id / 2: depth_1 첫번째 메뉴 (메인)
-  const [checkedId, setCheckedId] = useState("2");
+  const [d1CheckedId, setD1CheckedId] = useState("2");
 
-  // 클릭한 대상의 id 를 checkedId 에 저장, depth_2 로 보내서, depth_2 의 pid 와 같은 depth_2 를 보여줘야함
+  // 클릭한 대상의 id 를 d1CheckedId 에 저장, depth_2 로 보내서, depth_2 의 pid 와 같은 depth_2 를 보여줘야함
   const getCheckedId = (e) => {
-    setCheckedId(e.target.id);
+    setD1CheckedId(e.target.id);
   };
 
   const Depth01Info = ({ id, value }) => {
     return (
       <li>
-        <a
-          href="#void"
-          className={`btn ${checkedId === id ? "btn-clicked" : ""}`}
-          id={id}
-          onClick={getCheckedId}
-        >
+        <a href="#void" className={`btn ${d1CheckedId === id ? "btn-clicked" : ""}`} id={id} onClick={getCheckedId}>
           {value}
         </a>
       </li>
@@ -43,7 +38,7 @@ const DataD1List = ({ kj_sb }) => {
     <>
       <p>depth_01 app_name here</p>
       <ShowD1Data />
-      <DataD2List kj_sb={kj_sb} checkedId={checkedId} />
+      <DataD2List kj_sb={kj_sb} d1CheckedId={d1CheckedId} />
     </>
   );
 };

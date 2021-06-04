@@ -1,7 +1,7 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 
-const DataD2List = ({ kj_sb, checkedId }) => {
+const DataD2List = ({ kj_sb, d1CheckedId }) => {
   // depth_02__id
   // depth_02__pid
   // depth_02__app_name
@@ -23,16 +23,11 @@ const DataD2List = ({ kj_sb, checkedId }) => {
     const depth_02__data = depth_01.map((item) =>
       item.map((item) => {
         return (
-          <Depth02Info
-            key={uuidv4()}
-            id={item.id}
-            pid={item.pid}
-            app_name={item.app_name}
-            app_url={item.app_url}
-          />
+          <Depth02Info key={uuidv4()} id={item.id} pid={item.pid} app_name={item.app_name} app_url={item.app_url} />
         );
       })
     );
+    console.log(depth_02__data);
     return <>{depth_02__data}</>;
   };
 
