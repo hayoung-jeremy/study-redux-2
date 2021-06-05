@@ -41,6 +41,7 @@ button {
 }
 
 body {
+  margin-top: 48px;
   background-color: var(--bg-dark);
   *word-break: break-all;
   -ms-word-break: break-all;
@@ -149,6 +150,9 @@ aside {
 /* ---------- common ---------- */
 /* header */
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding: var(--pd-header);
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
   background-color: var(--bg-dark);
