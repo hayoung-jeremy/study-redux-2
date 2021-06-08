@@ -23,7 +23,6 @@ const DataD2List = ({ kj_sb, d1CheckedId }) => {
   const ShowD2Data = () => {
     const depth_02__data = depth_01.map((item) =>
       item.map((item, index) => {
-        // console.log(item);
         if (item.pid === d1CheckedId) {
           return (
             <Depth02Info
@@ -53,4 +52,4 @@ const DataD2List = ({ kj_sb, d1CheckedId }) => {
   );
 };
 
-export default DataD2List;
+export default React.memo(DataD2List);

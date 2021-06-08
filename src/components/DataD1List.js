@@ -14,7 +14,12 @@ const DataD1List = ({ kj_sb }) => {
   const Depth01Info = ({ id, value }) => {
     return (
       <li>
-        <a href="#void" className={`btn ${d1CheckedId === id ? "btn-clicked" : ""}`} id={id} onClick={getCheckedId}>
+        <a
+          href="#void"
+          className={`btn ${d1CheckedId === id ? "btn-clicked" : ""}`}
+          id={id}
+          onClick={getCheckedId}
+        >
           {value}
         </a>
       </li>
@@ -43,4 +48,4 @@ const DataD1List = ({ kj_sb }) => {
   );
 };
 
-export default DataD1List;
+export default React.memo(DataD1List);

@@ -3,7 +3,7 @@ import DataD1List from "./DataD1List";
 import data_personal from "../db/data_personal.json";
 
 const ViewDataPersonal = () => {
-  const [kj_sb] = data_personal;
+  const kj_sb = data_personal;
   // console.log(kj_sb);
   return <DataD1List kj_sb={kj_sb} />;
 };
