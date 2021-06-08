@@ -8,8 +8,7 @@ const DataD2List = ({ kj_sb, d1CheckedId }) => {
   // depth_02__app_name
   // depth_02__app_url
   const depth_01 = kj_sb.menus.map((item) => item.menus);
-  const Depth02Info = ({ id, index, pid, app_name, app_url }) => {
-    // console.log(index);
+  const Depth02Info = ({ id, pid, app_name, app_url }) => {
     return (
       <li>
         <p>
@@ -25,19 +24,22 @@ const DataD2List = ({ kj_sb, d1CheckedId }) => {
     const depth_02__data = depth_01.map((item) =>
       item.map((item, index) => {
         // console.log(item);
-        return (
-          <Depth02Info
-            key={uuidv4()}
-            id={item.id}
-            pid={item.pid}
-            app_name={item.app_name}
-            app_url={item.app_url}
-            index={index}
-          />
-        );
+        if (item.pid === d1CheckedId) {
+          return (
+            <Depth02Info
+              key={uuidv4()}
+              id={item.id}
+              pid={item.pid}
+              app_name={item.app_name}
+              app_url={item.app_url}
+              index={index}
+            />
+          );
+        } else {
+          return null;
+        }
       })
     );
-    console.log(depth_02__data);
     return <>{depth_02__data}</>;
   };
 
